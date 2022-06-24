@@ -1,8 +1,15 @@
-<section class="post-form">
+<section class="post-form box">
     <%= form_with(model: @post) do |f| %>
-        <%= f.text_field(:title, required: true, placeholder: "Title") %>
-        <%= f.text_area(:body, required: true, placeholder: "What's on your mind?") %>
+        <div class="field">
+            <%= f.text_field(:title, required: true, placeholder: "Title", class: "title") %>
+        </div>
+
+        <div class="field">
+            <%= f.text_area(:body, required: true, placeholder: "What's on your mind?", rows: 5) %>
+        </div>
     
-        <%= f.button("Post", type: "submit", class: "btn-primary") %>
+        <div class="field right">
+            <%= f.button("Post", type: "submit", class: "btn-primary ph-16") %>
+        </div>
     <% end %>
 </section>

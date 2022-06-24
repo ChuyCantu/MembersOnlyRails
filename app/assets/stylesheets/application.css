@@ -15,4 +15,5 @@
  *= require_self
  *= require 'main'
  *= require 'posts-feed'
+ *= require 'auth'
  */

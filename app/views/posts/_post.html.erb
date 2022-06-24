@@ -1,8 +1,23 @@
-<article class="post">
-    <h2><%= post.title %></h2>
+<article class="post box post-size-limit">
+    <div class="post-header">
+        <h2 class="title"><%= post.title %></h2>
 
-    <% if user_signed_in? %>
-        <strong>Author: </strong><small><%= post.user.name %></small>
-    <% end %>
-    <p><%= post.body %></p>
+        <% if user_signed_in? %>
+            <small class="author-field">
+                By <strong class="author"><%= post.user.name %></strong>
+            </small>
+        <% end %>
+    </div>
+    
+    <div class="body">
+        <%#= simple_format(post.body) %>
+        <p><%= post.body %></p>
+    
+        <div class="panel hidden"></div>
+    </div>
+
+    <div>
+        <span class="link show-more-btn hidden">Show more...</span>
+    </div>
+
 </article>

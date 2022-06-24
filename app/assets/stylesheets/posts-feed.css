@@ -77,14 +77,16 @@
     border-radius: 4px;
 }
 
-.post div:last-child {
+.post .buttons-container {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     margin-top: 10px;
 }
 
-.post div:last-child .link {
+.post .buttons-container .link {
     padding: 8px 12px;
+    justify-self: flex-end;
 } 
 
 .show-more-btn:hover {
@@ -93,4 +95,13 @@
 
 .hidden {
     visibility: hidden;
+}
+
+.post .buttons-container .main-buttons {
+    display: flex;
+    flex: 1;
+}
+
+.post .buttons-container .main-buttons .link {
+    padding: 0;
 }

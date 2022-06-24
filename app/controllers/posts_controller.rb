@@ -4,6 +4,7 @@ class PostsController < ApplicationController
 
    # GET /posts
   def index
+    @post = Post.new
     @posts = Post.all.order("created_at DESC")
   end
 

@@ -1,0 +1,14 @@
+.main-container {
+    display: grid;
+    /* In we want some side content */
+    grid-template-columns: 1fr 1fr 1fr; /* minmax(45ch, 75ch) */
+    justify-content: space-around;
+}
+
+.feed {
+    background: #fff;
+    grid-column: 2/3;
+
+    display: flex;
+    flex-direction: column;
+}

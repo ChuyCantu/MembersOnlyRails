@@ -1,0 +1,8 @@
+<article class="post">
+    <h2><%= post.title %></h2>
+
+    <% if user_signed_in? %>
+        <strong>Author: </strong><small><%= post.user.name %></small>
+    <% end %>
+    <p><%= post.body %></p>
+</article>

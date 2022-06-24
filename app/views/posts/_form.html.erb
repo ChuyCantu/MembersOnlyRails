@@ -1,0 +1,8 @@
+<section class="post-form">
+    <%= form_with(model: @post) do |f| %>
+        <%= f.text_field(:title, required: true, placeholder: "Title") %>
+        <%= f.text_area(:body, required: true, placeholder: "What's on your mind?") %>
+    
+        <%= f.button("Post", type: "submit", class: "btn-primary") %>
+    <% end %>
+</section>

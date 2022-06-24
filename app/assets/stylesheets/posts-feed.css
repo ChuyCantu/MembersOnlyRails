@@ -105,3 +105,8 @@
 .post .buttons-container .main-buttons .link {
     padding: 0;
 }
+
+.welcome-msg {
+    background: #d1e7dd;
+    border: 2px solid #badbcc;
+}

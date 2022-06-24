@@ -2,6 +2,8 @@
     <section class="feed">
         <% if user_signed_in? %>
             <%= render "form" %>
+        <% else %>
+            <%= render "welcome" %>
         <% end %>
 
         <%= render @posts %>

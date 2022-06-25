@@ -1,5 +1,9 @@
 document.documentElement.addEventListener('turbo:load', () => {
     const posts = document.getElementsByClassName("post");
+
+    if (posts.length == 0)
+        return;
+
     let maxHeight = 0;
     if (posts.length > 0) 
         maxHeight = Number(window.getComputedStyle(posts[0]).maxHeight.match(/\d+/));

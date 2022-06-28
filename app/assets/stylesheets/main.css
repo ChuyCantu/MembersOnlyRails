@@ -17,7 +17,7 @@ body {
 .main-container {
     display: grid;
     /* In case we want some side content */
-    grid-template-columns: minmax(auto, 1fr) minmax(45ch, 75ch) minmax(auto, 1fr); /* minmax(45ch, 75ch) */
+    grid-template-columns: minmax(auto, 1fr) minmax(40ch, 75ch) minmax(auto, 1fr); /* minmax(45ch, 75ch) */
     justify-content: space-around;
 }
 
@@ -70,6 +70,7 @@ body {
 
 ul {
     margin: 0;
+    padding: 0;
 }
 
 .navbar {
@@ -78,12 +79,12 @@ ul {
     flex-direction: row;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    height: 50px;
 }
 
 .navbar-branding {
     display: flex;
     align-items: center;
-    padding: 0 10px;
 }
 
 .navbar-brand {
@@ -93,6 +94,7 @@ ul {
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
+    padding: 0 10px;
 }
 
 .navbar-items {
@@ -100,11 +102,13 @@ ul {
     flex: 1 1 auto;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding-right: 10px;
 }
 
 .nav-item {
     list-style: none;
-    padding: 15px 10px;
 }
 
 /*
